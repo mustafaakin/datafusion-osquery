@@ -1,0 +1,17 @@
+[package]
+name = "datafusion-osquery"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+async-trait = "0.1.80"
+datafusion = { version = "38.0.0", default-features = true, features = ["avro"] }
+datafusion-common = { version = "38.0.0", default-features = true }
+datafusion-expr = { version = "38.0.0", default-features = true }
+datafusion-optimizer = { version = "38.0.0", default-features = true }
+datafusion-physical-expr = { version = "38.0.0", default-features = true }
+datafusion-sql = { version = "38.0.0" }
+tokio = { version = "1.38.0", features = ["rt-multi-thread", "parking_lot"] }
+serde_json = "1.0.117"
+arrow = "52.0.0"
+serde = { version = "1.0.203", features = ["derive"] }
